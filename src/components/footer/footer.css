@@ -1,0 +1,147 @@
+.container{
+    width:90vmax;
+    margin:0 auto;
+}
+.icons{
+    margin-top: 30px;
+}
+.icons ul{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.icons ul li{
+    position: relative;
+    display: flex;
+    align-items: center;justify-content: center;
+    width: 80px;
+    height: 80px;
+    list-style-type: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.icons ul li:nth-child(1) a{
+    text-decoration: none;
+    color:#1877f2;
+    position: relative;
+    z-index: 11;
+    font-size: 2em;
+    transition: .5s;
+
+}
+
+.icons ul li:nth-child(1):hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px #1877f2);
+}
+
+
+
+.icons ul li:nth-child(2) a{
+    text-decoration: none;
+    color:#c32aa3;
+    position: relative;
+    z-index: 11;
+    font-size: 2em;
+    transition: .5s;
+
+}
+
+.icons ul li:nth-child(2):hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px #c32aa3);
+}
+
+
+.icons ul li:nth-child(3) a{
+    text-decoration: none;
+    color:#1da1f2;
+    position: relative;
+    z-index: 11;
+    font-size: 2em;
+    transition: .5s;
+
+}
+
+.icons ul li:nth-child(3):hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px #1da1f2);
+}
+
+
+.icons ul li:nth-child(4) a{
+    text-decoration: none;
+    color:#25d366;
+    position: relative;
+    z-index: 11;
+    font-size: 2em;
+    transition: .5s;
+
+}
+
+.icons ul li:nth-child(4):hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px #25d366);
+}
+
+
+
+.icons ul li:nth-child(5) a{
+    text-decoration: none;
+    color:#ff0000;
+    position: relative;
+    z-index: 11;
+    font-size: 2em;
+    transition: .5s;
+
+}
+
+.icons ul li:nth-child(5):hover a{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px #ff0000);
+}
+
+#contact{
+    margin-top: 70px;
+    padding: 90px 0;
+    text-align: left;
+    background:rgba(0,0,0,0.5);
+
+}
+@media(max-width: 820px){
+    .container{
+        width: 700px;
+    }
+    .icons ul{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .container{
+        width: 500px;
+    }
+    .icons ul{
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 510px) {
+    .container{
+        width: 450px;
+    }
+    .icons ul{
+        gap:20px;
+    }
+    .icons ul li a{
+        font-size: 1.5em;
+    }
+    footer h1{
+        font-size: 6vw;
+    }
+    .icons ul{
+        flex-direction: column;
+    }
+}

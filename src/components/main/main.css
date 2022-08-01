@@ -1,0 +1,367 @@
+.container{
+    width:90vmax;
+    margin:0 auto;
+}
+.my-skills{
+
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{
+    position: relative;
+    width: 250px;
+    height: 270px;
+    background: rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+}
+.percent{
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+}
+.percent svg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform: rotate(270deg);
+
+}
+.percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 2;
+    transform: translate(5px,5px);
+}
+.card:nth-child(1) .percent svg circle:nth-child(2){
+    stroke: #04fc43;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(1) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 85));
+    animation: animeDot 2s linear forwards;
+}
+
+
+@keyframes animeDot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 85));
+    }
+}
+#card1 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #04fc43;
+    box-shadow: 0 0 10px #04fc43,
+    0 0 30px #04fc43;
+}
+
+
+
+.card:nth-child(2) .percent svg circle:nth-child(2){
+    stroke: #fee800;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(2) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 95));
+    animation: animeDot2 2s linear forwards;
+}
+
+
+@keyframes animeDot2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 95));
+    }
+}
+ #card2 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#fee800;
+    box-shadow: 0 0 10px #fee800,
+    0 0 30px #fee800;
+}
+
+
+
+
+.card:nth-child(3) .percent svg circle:nth-child(2){
+    stroke: #ff00be;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 35) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(3) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 35));
+    animation: animeDot3 2s linear forwards;
+}
+
+
+@keyframes animeDot3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 35));
+    }
+}
+#card3 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#ff00be;
+    box-shadow: 0 0 10px #ff00be,
+    0 0 30px #ff00be;
+}
+
+
+
+
+.card:nth-child(4) .percent svg circle:nth-child(2){
+    stroke: #06ccff;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 20) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(4) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 20));
+    animation: animeDot4 2s linear forwards;
+}
+
+
+@keyframes animeDot4 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 20));
+    }
+}
+#card4 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#06ccff;
+    box-shadow: 0 0 10px #06ccff,
+    0 0 30px #06ccff;
+}
+
+
+
+.card:nth-child(5) .percent svg circle:nth-child(2){
+    stroke: #808000;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 15) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(5) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 15));
+    animation: animeDot5 2s linear forwards;
+}
+
+
+@keyframes animeDot5 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 15));
+    }
+}
+#card5 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#808000;
+    box-shadow: 0 0 10px #808000,
+    0 0 30px #808000;
+}
+
+
+
+.card:nth-child(6) .percent svg circle:nth-child(2){
+    stroke: #FF1493;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.card:nth-child(6) .dot{
+    position: absolute;
+    inset: 5px;
+    transform: rotate(calc(3.6deg * 80));
+    animation: animeDot6 2s linear forwards;
+}
+
+
+@keyframes animeDot6 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * 80));
+    }
+}
+#card6 .dot:before{
+    content:'';
+    top:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#FF1493;
+    box-shadow: 0 0 10px #FF1493,
+    0 0 30px #FF1493;
+}
+@keyframes fotdIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.number{
+    position: absolute;
+    inset:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fotdIn 1s linear forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+.number h2{
+    color:#fff;
+    font-weight: 700;
+    font-size:2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number h2 span{
+    font-weight: 300;
+    color:#fff;
+    font-size:0.5em;
+}
+.number p{
+    font-weight: 300;
+    font-size: 0.75em;
+
+    text-transform: uppercase;
+    color:rgba(255,255,255,0.75);
+    letter-spacing: 2px;
+
+}
+
+@media(max-width: 820px){
+    .container{
+        width: 700px;
+    }
+}
+@media (max-width: 650px) {
+    .container{
+        width: 500px;
+    }
+
+}
+@media (max-width: 510px) {
+    .container {
+        width: 450px;
+    }
+
+}
